@@ -36,10 +36,12 @@ export function meteorAppearance(shower,limit=6.5,random=Math.random){
  const magnitude=faint+Math.log(1-u*(1-r**(bright-faint)))/Math.log(r);
  const colorDraw=random(),trainDraw=random();
  const tint=magnitude>2||colorDraw<.45?'white':colorDraw<.7?'green':colorDraw<.88?'warm':'blue';
- const colors={white:'224,229,231',green:'161,202,181',warm:'221,196,162',blue:'176,198,227'};
+ const colors={white:'240,243,246',green:'178,218,196',warm:'236,213,180',blue:'194,214,240'};
  const power=clamp((faint-magnitude)/5,0,1);
- return {magnitude,tint,rgb:colors[tint],opacity:.32+.63*power,
-  width:.65+1.05*power,wake:.08+.13*power,
+ // A brighter, slightly broader display curve keeps short streaks readable.
+ // This artistic lift does not change event counts, magnitudes or color odds.
+ return {magnitude,tint,rgb:colors[tint],opacity:.62+.35*Math.sqrt(power),
+  width:.95+.85*Math.sqrt(power),wake:.11+.16*power,
   trainMs:magnitude<1&&trainDraw<(shower.speed>40?.55:.15)?1200+random()*1200:0};
 }
 // Integrated Poisson hazard: rate changes, time speeds and pauses are handled

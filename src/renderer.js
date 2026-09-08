@@ -160,9 +160,10 @@ export class SkyRenderer{
    if(Math.hypot(a.x-b.x,a.y-b.y)<.1)continue;
    const opacity=train?.22*(1-(age-m.duration)/l.trainMs)**2:Math.sin(Math.PI*t)**.35*l.opacity;
    c.save();c.globalAlpha=opacity;const g=c.createLinearGradient(a.x,a.y,b.x,b.y);
-   g.addColorStop(0,`rgba(${l.rgb},0)`);g.addColorStop(.7,`rgba(${l.rgb},.65)`);g.addColorStop(1,train?`rgb(${l.rgb})`:'#f1f2ee');
+   g.addColorStop(0,`rgba(${l.rgb},0)`);g.addColorStop(.55,`rgba(${l.rgb},.72)`);g.addColorStop(1,train?`rgb(${l.rgb})`:'#fffdf7');
    c.strokeStyle=g;c.lineWidth=train?.65:l.width;
-   c.shadowBlur=l.magnitude<1?3:0;c.shadowColor=`rgb(${l.rgb})`;c.beginPath();c.moveTo(a.x,a.y);c.lineTo(b.x,b.y);c.stroke();c.restore();
+   c.shadowBlur=train?0:l.magnitude<1?5:2;c.shadowColor=`rgb(${l.rgb})`;c.beginPath();c.moveTo(a.x,a.y);c.lineTo(b.x,b.y);c.stroke();
+   if(!train){c.fillStyle='#fffdf7';c.beginPath();c.arc(b.x,b.y,l.width*.48,0,Math.PI*2);c.fill();}c.restore();
   }
  }
  drawLandscape(day){

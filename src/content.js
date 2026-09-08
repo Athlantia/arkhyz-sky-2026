@@ -1,8 +1,17 @@
 export const pick=(value,lang)=>Array.isArray(value)?value[lang==='ru'?0:1]:value;
 export const UI={
- inspired:['Вдохновлено Астровертами','Inspired by Astroverts'],
- meteorAppearance:['Большинство видимых глазом метеоров кажутся белыми или бесцветными. Здесь слабые события — короткие белые штрихи; у редких ярких бывают приглушённые зеленоватые, тёплые или голубоватые оттенки и недолгое послесвечение. Надёжной доли именно зелёных Персеид для этих условий не найдено: выбор оттенков и следов — художественное приближение, а не измеренная статистика 2026 года. Частота самих метеоров по календарю IMO не увеличена.','Most naked-eye meteors appear white or colorless. Faint events here are short white streaks; rare bright ones may show muted green, warm or bluish tones and a brief lingering train. No reliable green-Perseid fraction was found for these conditions: palette and train choices are illustrative, not measured 2026 statistics. The IMO-based total event rate has not been increased.'],
- milkyCredit:['Млечный Путь: ESO/S. Brunier · адаптация фотографии','Milky Way: ESO/S. Brunier · adapted photograph'],
+ "inspired": [
+  "Вдохновлено Астровертами",
+  "Inspired by Astroverts"
+ ],
+ "meteorAppearance": [
+  "Метеоры чаще всего выглядят как светлые штрихи. Мы немного усилили яркость, светящуюся головку и мягкий след, чтобы их было легче заметить. У редких ярких событий бывают зеленоватые, тёплые или голубоватые оттенки и послесвечение. Это художественная настройка; частота событий по модели IMO остаётся прежней.",
+  "Most meteors appear as pale streaks. Brightness, a luminous head and a soft wake are gently enhanced to make them easier to notice. Rare bright events may show green, warm or bluish tones and a lingering train. This is an artistic display choice; the IMO-based event rate is unchanged."
+ ],
+ "milkyCredit": [
+  "Млечный Путь: ESO/S. Brunier · адаптация фотографии",
+  "Milky Way: ESO/S. Brunier · adapted photograph"
+ ],
  "title": [
   "Возвращение\nк звёздам",
   "Back to\nthe stars"
@@ -300,12 +309,8 @@ export const UI={
   "End of 25 August reached. Choose another date."
  ],
  "helpTitle": [
-  "Побудьте здесь немного",
-  "Stay a little longer"
- ],
- "helpCopy": [
-  "Обзор на 360°: мышь, пальцы или стрелки. Клик по пустому небу приближает его: ×1 → ×2 → ×4. Ползунок, колесо и жест двумя пальцами плавно меняют масштаб от ×1 до ×4. Кнопка с глазом скрывает интерфейс и на телефоне. Звёзды и планеты открываются одним нажатием; объекты глубокого космоса — двойным нажатием или через атлас. Кнопка Луны помогает найти её или выбрать подходящую ночь. Нажмите на название созвездия, чтобы прочитать историю.",
-  "Look around 360° with a mouse, touch or arrow keys. Click empty sky to zoom: ×1 → ×2 → ×4. Use the slider, scroll wheel or pinch for continuous ×1–×4 zoom. The eye button hides the interface on phones too. Stars and planets open with one tap; double-tap deep-sky objects, or use the atlas. The Moon button finds it or offers a suitable night. Select a constellation name to read its story."
+  "Управление",
+  "Controls"
  ],
  "conditions": [
   "Ясное небо · адаптация к темноте",
@@ -378,10 +383,6 @@ export const UI={
  "details": [
   "Подробнее",
   "Details"
- ],
- "accuracyText": [
-  "Точка наблюдения — БТА САО РАН: 43.653333° N, 41.441667° E, 2070 м. Время всегда UTC+3. Звёзды — HYG v4.1, собственные движения учтены на 8 августа 2026; ежедневная прецессия и нутация — Astronomy Engine. Планеты, Луна и Солнце — топоцентрические эфемериды с поправкой на время распространения света и аберрацию.\n\nПроверка: 459 положений девяти тел с 1 по 26 августа сравнены с NASA JPL Horizons без рефракции. Наибольшее угловое расхождение — 0.263′. Это проверка выбранной сетки дат, а не гарантия нулевой ошибки во все моменты. Рефракция приближённая, с поправкой на высоту площадки.\n\nВидимость: ясное небо, предел до 6.5m в зените при ×1, ослабление у горизонта и приблизительная засветка Луной и Солнцем. Реальная погода, зрение наблюдателя и местное освещение неизвестны. При увеличении до ×4 учебный атлас плавно открывает звёзды до 8m.\n\nСозвездия — западная традиция, данные D3 Celestial; соединительные линии условны, официальными являются границы областей. Млечный Путь — адаптация фотопанорамы ESO/S. Brunier (CC BY 4.0): рассеянный свет, пылевые разрывы и неравномерные звёздные облака. Отдельные точки на фотографии подавлены фильтром; звёзды рисуются по каталогу. Панорама поворачивается по галактическим координатам. Яркость и почти бесцветный тон подобраны для ночного вида, с ослаблением из-за Луны, сумерек и низкой высоты; это не фотометрическая калибровка зрения. Лес, горы и купол — художественные силуэты, без геодезической съёмки горизонта. Их положения нельзя использовать как ориентиры на реальной площадке.\n\nПять метеорных потоков: календарь IMO 2026. Персеиды — номинальный ZHR 100 у максимума. Суточные профили, дрейф радиантов и цвет следов — приближённая модель. По умолчанию частота всего неба собрана в кадре; в настройках есть распределение по всему небу. Сервис IMO сообщил о частичной недоступности после кибератаки; подтверждённая кривая наблюдений 2026 не получена. Спутникам нужен архив орбит: случайные или современные орбиты вместо него не используются.\n\nГлубокий космос: 110 объектов Мессье из D3 Celestial и 36 объектов Колдуэлла с координатами OpenNGC (CC BY-SA 4.0). Фотографии — Wikimedia Commons, NASA/Hubble, ESO и обзор DSS2 через CDS; авторы и лицензии указаны у каждого снимка. Интернет нужен для загрузки фотографий.\n\n35 историй названий звёзд — наши краткие пересказы и переводы All Skies Encyclopaedia: IAU-WGSN Etymology Group, Susanne M Hoffmann, Youla Azkarrula, Ian Ridpath и авторы отдельных статей, CC BY 4.0. История Нави — NASA Apollo Lunar Surface Journal. Ссылки на конкретные источники есть в карточках.",
-  "Observer: BTA, SAO RAS, 43.653333° N, 41.441667° E, 2070 m. Time is always UTC+3. Stars use HYG v4.1, with proper motion applied to 8 August 2026 and date-dependent precession and nutation from Astronomy Engine. Planets, Moon and Sun use topocentric ephemerides including light travel time and aberration.\n\nValidation: 459 positions of nine bodies from 1 to 26 August were compared with NASA JPL Horizons without atmospheric refraction. Maximum angular difference: 0.263′. This validates the sampled dates; it does not guarantee zero error at every instant. Refraction is approximate and scaled for the site elevation.\n\nVisibility assumes clear skies, up to magnitude 6.5 at the zenith at ×1, atmospheric extinction and approximate lunar and solar skyglow. Actual weather, eyesight and local lighting are unknown. Zooming toward ×4 smoothly reveals an educational atlas with stars down to magnitude 8.\n\nConstellations follow the Western tradition using D3 Celestial data. Connecting lines are conventional; only region boundaries are official. The Milky Way adapts the ESO/S. Brunier photographic panorama (CC BY 4.0), preserving diffuse starlight, dust lanes and uneven star clouds. Image point sources are suppressed by filtering; individual stars come from the catalog. The panorama follows galactic coordinates. Brightness and nearly neutral color are tuned for a night view, with lunar, twilight and low-altitude attenuation; this is not a photometric calibration of human vision. Forest, mountains and dome are artistic silhouettes without a surveyed horizon; their positions are not real-site navigation landmarks.\n\nFive meteor showers use the IMO 2026 calendar, with a nominal Perseid peak ZHR of 100. Daily profiles, radiant drift and colors are approximate. By default the all-sky rate is collected in the current view; whole-sky distribution is available in the shower settings. IMO reported partial downtime after a cyberattack; a verified 2026 observation curve was not obtained. Satellites require historical orbital data; no random or contemporary orbits are substituted.\n\nDeep sky: 110 Messier objects from D3 Celestial and 36 Caldwell objects with OpenNGC coordinates (CC BY-SA 4.0). Photographs come from Wikimedia Commons, NASA/Hubble, ESO and the DSS2 survey via CDS; credits and licenses accompany each image. Photographs require internet access.\n\n35 star-name histories are our short retellings and translations of All Skies Encyclopaedia: IAU-WGSN Etymology Group, Susanne M Hoffmann, Youla Azkarrula, Ian Ridpath and individual article authors, CC BY 4.0. Navi follows NASA’s Apollo Lunar Surface Journal. Each card links to its specific source."
  ],
  "messierTab": [
   "Мессье",
@@ -494,6 +495,22 @@ export const UI={
  "dayMeteors": [
   "В светлом небе метеоров не видно",
   "Daylight hides the meteors"
+ ],
+ "together": [
+  "Вместе с Астровертами",
+  "Together with Astroverts"
+ ],
+ "inspiredLead": [
+  "Вдохновлено",
+  "Inspired by"
+ ],
+ "astrovertsBy": [
+  "Астровертами",
+  "Astroverts"
+ ],
+ "sourcesCredits": [
+  "Источники и авторы",
+  "Sources and credits"
  ]
 };
 export const BODY_INFO={
