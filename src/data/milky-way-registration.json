@@ -1,0 +1,147 @@
+{
+  "source": "https://www.eso.org/public/images/eso0932a/",
+  "width": 6000,
+  "height": 3000,
+  "registration": "Small spherical rotation fitted to nine bright HYG reference stars; point centers estimated from image contrast.",
+  "rotationColumns": [
+    [
+      0.9979900191627333,
+      -0.054889746451761055,
+      0.03167076547904021
+    ],
+    [
+      0.05549960276390118,
+      0.9982834115938362,
+      -0.018708934486514554
+    ],
+    [
+      -0.03058947113985714,
+      0.02042904479002642,
+      0.9993232401902554
+    ]
+  ],
+  "fit": [
+    {
+      "name": "Sirius",
+      "photoX": 5258.761047679257,
+      "photoY": 1654.2900244400596
+    },
+    {
+      "name": "Canopus",
+      "photoX": 4686.510994799478,
+      "photoY": 1905.530162422745
+    },
+    {
+      "name": "Arcturus",
+      "photoX": 2739.9913345111954,
+      "photoY": 324.1418112444455
+    },
+    {
+      "name": "Vega",
+      "photoX": 1915.8611098858207,
+      "photoY": 1181.3957302460879
+    },
+    {
+      "name": "Capella",
+      "photoX": 346.1837522948795,
+      "photoY": 1457.9084039302277
+    },
+    {
+      "name": "Procyon",
+      "photoX": 5496.259037842998,
+      "photoY": 1297.1380729783393
+    },
+    {
+      "name": "Achernar",
+      "photoX": 4174.716086822157,
+      "photoY": 2451.8590977942563
+    },
+    {
+      "name": "Aldebaran",
+      "photoX": 25.815812138975993,
+      "photoY": 1867.4717445232977
+    },
+    {
+      "name": "Spica",
+      "photoX": 3797.5010634707814,
+      "photoY": 616.5977951791426
+    }
+  ],
+  "validation": [
+    {
+      "hip": 102098,
+      "name": "Deneb",
+      "ra": -49.642006,
+      "dec": 45.280349,
+      "photoX": 1646.181200470454,
+      "photoY": 1479.4936730874545,
+      "residualDegrees": 0.1341590403069679
+    },
+    {
+      "hip": 80763,
+      "name": "Antares",
+      "ra": -112.648164,
+      "dec": -26.432174,
+      "photoX": 3182.121221160786,
+      "photoY": 1212.5077642631336,
+      "residualDegrees": 0.24676290759472513
+    },
+    {
+      "hip": 11767,
+      "name": "Polaris",
+      "ra": 37.979955,
+      "dec": 89.264022,
+      "photoX": 988.7803093015567,
+      "photoY": 1087.5712152268022,
+      "residualDegrees": 0.2105021271291581
+    },
+    {
+      "hip": 49669,
+      "name": "Regulus",
+      "ra": 152.091078,
+      "dec": 11.967242,
+      "photoX": 5314.768769027635,
+      "photoY": 690.0510724482494,
+      "residualDegrees": 0.21603783587946468
+    },
+    {
+      "hip": 37826,
+      "name": "Pollux",
+      "ra": 116.32372,
+      "dec": 28.025859,
+      "photoX": 5858.886272554628,
+      "photoY": 1135.866642299939,
+      "residualDegrees": 0
+    },
+    {
+      "hip": 113368,
+      "name": "Fomalhaut",
+      "ra": -15.584506,
+      "dec": -29.623449,
+      "photoX": 2761.6251129843117,
+      "photoY": 2559.9994270146326,
+      "residualDegrees": 0.14652035253501935
+    },
+    {
+      "hip": 31681,
+      "name": "Alhena",
+      "ra": 99.427904,
+      "dec": 16.398758,
+      "photoX": 5774.910925617703,
+      "photoY": 1444.6176540380966,
+      "residualDegrees": 0.3
+    },
+    {
+      "hip": 109268,
+      "name": "Alnair",
+      "ra": -27.940348,
+      "dec": -46.962067,
+      "photoX": 3231.704648709696,
+      "photoY": 2341.5860370820437,
+      "residualDegrees": 0.11450580663814396
+    }
+  ],
+  "assetWidth": 2048,
+  "assetHeight": 1024,
+  "assetSha256": "270970d08a816fc6fdd8ed4f86520c7cec25511b4fa0cc2b69788222036451e8"
+}

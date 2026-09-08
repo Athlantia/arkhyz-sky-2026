@@ -1,0 +1,18 @@
+Photographic source: The Milky Way panorama, eso0932a (2009)
+Credit: ESO/S. Brunier
+Source: https://www.eso.org/public/images/eso0932a/
+Embedded image: 2048 x 1024 JPEG derived from the 6000 x 3000 source
+https://cdn.eso.org/images/large/eso0932a.jpg
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+ESO usage policy: https://www.eso.org/public/outreach/copyright/
+
+Adaptation in this application: downsampling, rank filtering of isolated point
+sources, luminance conversion, slight smoothing, exclusion of off-plane objects,
+star-based registration, reprojection into the observer's sky and illustrative
+brightness adjustment. The 3.80-degree orientation correction was fitted to nine
+HYG stars. Eight other reference stars were checked independently; the largest
+measured alignment residual is 0.300 degree, suitable for the diffuse texture.
+The cloud/dust morphology comes from the photograph. This is not a calibrated
+surface-brightness map. Catalog stars and 2026 solar-system ephemerides are drawn
+separately; the photographic point sources are suppressed, not used as objects.
