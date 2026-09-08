@@ -39,6 +39,12 @@ Navi's history follows the [NASA Apollo Lunar Surface Journal](https://www.nasa.
 
 Constellation legends are short original retellings of a Western tradition, with [Ian Ridpath's Star Tales](https://www.ianridpath.com/startales/contents.html) as a reference. They do not represent every culture's interpretation of the sky.
 
+## Music
+
+The optional soundtrack contains eight recordings supplied by the project owner from **Apollo: Atmospheres & Soundtracks (2019 remaster)** by [Brian Eno with Daniel Lanois and Roger Eno](https://www.brian-eno.net/): *An Ending (Ascent)*, *Under Stars*, *Signals*, *Under Stars II*, *Drift*, *Weightless*, *Always Returning*, and *Stars*. Recording credit: ℗ 2019 Virgin Records Limited.
+
+Delivery copies are stereo AAC-LC at 160 kbps, encoded from the supplied MP3 files with artwork removed and streaming metadata placed before the audio. No edits, remixes or loudness processing are applied. The recordings remain third-party copyrighted material; their inclusion does not place them under a source-code or open-data license. See `public/audio/apollo/NOTICE.txt`.
+
 ## Software and typefaces
 
 - Astronomy Engine and [satellite.js](https://github.com/shashwatak/satellite-js) are MIT-licensed. Their notices are in `THIRD_PARTY_LICENSES.txt`.

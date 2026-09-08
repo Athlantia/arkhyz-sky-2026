@@ -1,0 +1,82 @@
+[
+  {
+    "id": "an-ending-ascent",
+    "title": "An Ending (Ascent)",
+    "url": "audio/apollo/an-ending-ascent.105bc4f03fca.m4a",
+    "seconds": 264.879,
+    "bytes": 5382373,
+    "sha256": "105bc4f03fca86f45bf0b529eeb57b2fd2f446c7ccf27bc9c3b2ef8d1dda4982",
+    "sourceBytes": 10904712,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "under-stars",
+    "title": "Under Stars",
+    "url": "audio/apollo/under-stars.7c40a26af2e9.m4a",
+    "seconds": 269.659,
+    "bytes": 5452376,
+    "sha256": "7c40a26af2e90bd9861d37f5b10a57dd5e968d32ee5b9f5496a29fcdf4deadb0",
+    "sourceBytes": 11095935,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "signals",
+    "title": "Signals",
+    "url": "audio/apollo/signals.270eb45b5cc2.m4a",
+    "seconds": 167.39,
+    "bytes": 3388186,
+    "sha256": "270eb45b5cc2a17260586f738e78f98760528fd3f40d4d9e879bda986a34f9b1",
+    "sourceBytes": 7005156,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "under-stars-ii",
+    "title": "Under Stars II",
+    "url": "audio/apollo/under-stars-ii.029bbb53bce6.m4a",
+    "seconds": 203.308,
+    "bytes": 4111345,
+    "sha256": "029bbb53bce69ba4ae0765d4600c81db5356549288e01669829ec6d7816f37b9",
+    "sourceBytes": 8441898,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "drift",
+    "title": "Drift",
+    "url": "audio/apollo/drift.6daefcf34bf6.m4a",
+    "seconds": 185.466,
+    "bytes": 3759026,
+    "sha256": "6daefcf34bf6c3859e8dc6349f0416f6ce36e37044f752da5ed40edea6cac915",
+    "sourceBytes": 7728219,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "weightless",
+    "title": "Weightless",
+    "url": "audio/apollo/weightless.d1b596203a01.m4a",
+    "seconds": 275.093,
+    "bytes": 5568502,
+    "sha256": "d1b596203a018f7538001f474dc55504743b6627dcce64bf28c2f7c508f4b852",
+    "sourceBytes": 11313284,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "always-returning",
+    "title": "Always Returning",
+    "url": "audio/apollo/always-returning.1760f3de3bc5.m4a",
+    "seconds": 244.529,
+    "bytes": 4947505,
+    "sha256": "1760f3de3bc5452ff1cdb509563afb7c9bcf53b509601d1ad1a4b384e5cb6e24",
+    "sourceBytes": 10090745,
+    "sourceBitrate": 320000
+  },
+  {
+    "id": "stars",
+    "title": "Stars",
+    "url": "audio/apollo/stars.ce2615dde1ee.m4a",
+    "seconds": 482.165,
+    "bytes": 9761528,
+    "sha256": "ce2615dde1eeb2569e0840db3aa1da1de7151db81e2c77c10e6b6ffd61f97a14",
+    "sourceBytes": 19596175,
+    "sourceBitrate": 320000
+  }
+]

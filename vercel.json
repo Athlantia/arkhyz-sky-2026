@@ -3,5 +3,9 @@
   "framework": "vite",
   "installCommand": "npm ci",
   "buildCommand": "npm test && npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "headers": [{
+    "source": "/audio/apollo/:path*",
+    "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}]
+  }]
 }

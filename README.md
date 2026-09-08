@@ -15,6 +15,7 @@ Inspired by [Astroverts](https://astrovert.ru/) and their astronomy tours.
 - **Objects with stories.** Constellation legends, star-name histories, and photographs of 110 Messier objects and 36 selected Caldwell objects.
 - **An August meteor season.** Five automatic meteor showers, with rates influenced by the date, radiant altitude and moonlight.
 - **A living horizon.** A photographic Milky Way above an illustrated landscape, wandering horses and dogs, a night-time observer, and a rare forest visitor.
+- **An optional Apollo soundtrack.** Eight tracks by Brian Eno with Daniel Lanois and Roger Eno, off by default. *An Ending (Ascent)* opens the first listening session, followed by the remaining tracks in shuffled, repeating rounds.
 
 This is an educational sky simulation with an artistic landscape. Its astronomical basis and visual approximations are documented in [Astronomy and validation](docs/ASTRONOMY.md).
 
@@ -34,7 +35,7 @@ npm test
 npm run build
 ```
 
-The build produces a standalone `dist/index.html` with the application, catalogs, fonts and Milky Way image embedded. It can be served by a static web server or opened in a modern browser. Deep-sky photographs and external reference pages require internet access.
+The build produces a standalone `dist/index.html` with the application, catalogs, fonts and Milky Way image embedded. It can be served by a static web server or opened in a modern browser. The audio stays in separate files under `dist/audio/`; keep that folder beside `index.html` when copying the build. Music does not load until the listener presses its button. Deep-sky photographs and external reference pages require internet access.
 
 ## Controls
 
@@ -47,6 +48,7 @@ The build produces a standalone `dist/index.html` with the application, catalogs
 | Set the date and time | Date and local-time sliders; the clock uses UTC+3 |
 | Pause or change speed | Space, pause button, or ×1 / ×2 / ×4 / ×8 / ×16 |
 | Change sky layers | Constellations, meteor showers, ecliptic and deep sky; use the settings button on mobile |
+| Toggle music | Music-note button; press again to stop and resume later at the same position. The adjacent arrow opens volume, seek and next-track controls |
 | Hide the interface | Eye button; restore with the corner button or Esc |
 | Read the guide | The top Info button opens **Controls**; the footer **Details** button opens **About this sky** |
 
@@ -62,12 +64,21 @@ src/
   forest-life.js    Animals and the telescope observer
   milky-way.js      Photographic sky background
   field-guide.js    Bilingual controls and short explanatory panels
+  music.js          Bilingual controls for the optional soundtrack
+  audio-player.js   Lazy media loading and shuffled, repeating track order
   content.js        Interface text and object information
   data/             Catalogs, image metadata and license notices
-tests/              Astronomy, timing and rendering-model checks
+public/audio/       Separate, versioned audio files
+tests/              Astronomy, rendering, playlist and media-loading checks
 scripts/            Catalog preparation and validation utilities
 docs/               Scientific notes and source attribution
 ```
+
+## Audio delivery
+
+The eight stereo recordings are delivered as AAC-LC M4A at 160 kbps: **42.4 MB total for about 35 minutes**, compared with 86.2 MB of source MP3 files. The opening track is 5.4 MB. Audio bytes are not embedded in the page, and no audio source is assigned before the first user click. Only the current track is requested; turning music off cancels further buffering and preserves the position for resuming. Versioned filenames allow long-lived browser caching.
+
+Playback is independent of the simulated date, time and acceleration. Music stays on when the sky interface is hidden; a small music button remains available to stop it. Mobile browsers may suspend playback when the screen locks or the operating system limits background activity. Devices that do not expose programmatic volume control use their hardware volume buttons. Recordings retain their separate copyright notice in `public/audio/apollo/NOTICE.txt`.
 
 ## Documentation
 
