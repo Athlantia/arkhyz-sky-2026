@@ -496,10 +496,6 @@ export const UI={
   "В светлом небе метеоров не видно",
   "Daylight hides the meteors"
  ],
- "together": [
-  "Вместе с Астровертами",
-  "Together with Astroverts"
- ],
  "inspiredLead": [
   "Вдохновлено",
   "Inspired by"

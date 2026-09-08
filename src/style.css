@@ -37,12 +37,11 @@ input[type=range]{height:19px;margin-top:-8px;margin-bottom:-8px;background-size
 
 .inspiration{border-left:1px solid #c3a87f66;padding:3px 0 3px 13px;margin:0 0 23px}.inspiration .source-link{margin:0;color:#dfc9a8;font-size:12px}
 
-/* Intro credit, centered footer attribution and concise reading panels. */
-.intro>p:not(.intro-company){margin-bottom:7px}.intro>p.intro-company{margin:0 0 23px;color:#bdab91;font-size:11px}
+/* Centered footer attribution and concise reading panels. */
 .footer{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;min-height:18px;bottom:10px}.footer-coordinates{justify-self:start}.footer-credit{color:#96a3aa;font-size:9px;letter-spacing:.15px;white-space:nowrap;text-align:center}.footer-credit a{color:#cbb799;text-decoration:underline;text-decoration-color:#cbb79955;text-underline-offset:3px}.footer-credit a:hover{color:#f0d7b1}.footer #help-open{justify-self:end;min-height:24px}
 .prose .info-list{list-style:disc;margin:0;padding-left:17px}.prose .info-list li{padding-left:4px;margin:0 0 19px}.prose .info-list li::marker{color:#ae9a7a}.info-list strong{display:block;font-weight:500;color:#dfc9a8;font-size:12px;margin-bottom:5px}.info-list span{display:block;font-size:11px;line-height:1.8}.source-details{border-top:1px solid var(--line);margin-top:22px;padding-top:17px}.source-details summary{cursor:pointer;font-size:11px;color:#cdbb9f;padding:5px 0}.source-details .source-list{margin-top:10px}.model-note{margin-top:8px}
-@media(max-width:700px){.intro>p.intro-company{font-size:9px;margin-bottom:16px}.footer{left:17px;right:17px;bottom:max(6px,env(safe-area-inset-bottom));gap:6px;min-height:24px}.footer-coordinates{font-size:5px;line-height:1.55}.footer-credit{font-size:7.5px;letter-spacing:0}.footer #help-open{font-size:7px}.info-list strong{font-size:13px}.info-list span{font-size:12px}}
+@media(max-width:700px){.footer{left:17px;right:17px;bottom:max(6px,env(safe-area-inset-bottom));gap:6px;min-height:24px}.footer-coordinates{font-size:5px;line-height:1.55}.footer-credit{font-size:7.5px;letter-spacing:0}.footer #help-open{font-size:7px}.info-list strong{font-size:13px}.info-list span{font-size:12px}}
 @media(max-width:380px){.footer-coordinates>span{display:block}.footer-coordinates{font-size:5.5px;line-height:1.25}.footer-credit{font-size:7px}.footer{gap:4px}}
-@media(orientation:landscape) and (max-height:500px){.intro>p.intro-company{display:block;font-size:9px;margin:0}.footer{bottom:4px}}
+@media(orientation:landscape) and (max-height:500px){.footer{bottom:4px}}
 @media(max-width:700px){.header nav{gap:9px}.header nav #about-open{display:flex;width:28px;height:28px}.header nav #about-open svg{width:17px;height:17px}}
 @media(max-width:380px){.header nav{gap:6px}.nav-moon{padding:6px}.nav-moon small{display:none}.header nav #about-open{width:25px}.header .language{gap:5px}}
