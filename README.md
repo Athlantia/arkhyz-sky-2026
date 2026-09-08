@@ -4,6 +4,8 @@ An interactive August night beside the BTA observatory in Arkhyz. Look around th
 
 **1–25 August 2026 · Russian / English · Desktop / Mobile**
 
+**[Explore the sky →](https://arkhyz-sky-2026.vercel.app/)**
+
 Inspired by [Astroverts](https://astrovert.ru/) and their astronomy tours.
 
 ## Explore
