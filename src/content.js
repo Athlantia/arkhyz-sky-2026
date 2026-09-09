@@ -124,6 +124,10 @@ export const UI={
   "Стрелки — обзор · пробел — пауза",
   "Arrow keys to look · space to pause"
  ],
+ "desktopNavigation": [
+  "Мышь или ↑ ↓ ← → — обзор · курсор у края — плавный поворот · клик — приблизить",
+  "Drag or ↑ ↓ ← → to look around · hover near an edge to pan · click to zoom"
+ ],
  "return": [
   "Вернуться к панораме",
   "Return to panorama"

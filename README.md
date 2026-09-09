@@ -41,7 +41,7 @@ The build produces a standalone `dist/index.html` with the application, catalogs
 
 | Action | Control |
 | --- | --- |
-| Look around | Drag, one-finger touch, or arrow keys |
+| Look around | Drag, one-finger touch, or hold the arrow keys; on desktop, hover near a sky edge to pan gently |
 | Zoom smoothly | Slider, scroll wheel, or pinch; ×1 / ×2 / ×4 presets are also available |
 | Read an object card | Select a star, planet, the Moon, or a constellation name |
 | Open a deep-sky photograph | Double-click or double-tap the object; the atlas also supports search |
@@ -54,12 +54,15 @@ The build produces a standalone `dist/index.html` with the application, catalogs
 
 The Moon button shows its phase and location. If necessary, its card offers a suitable night within the available date range.
 
+Desktop edge panning uses a mouse with hover support and a viewport wider than 700 pixels. It accelerates gently within an edge band of up to 96 pixels, capped at 12° per second at ×1. Keyboard panning is capped at 28° per second. Both slow down as the view zooms in, and diagonal movement stays within the same speed cap. Return the cursor to the center or release the arrow keys to stop. Edge motion pauses over controls, during dragging, in dialogs, and when the page loses focus. Form inputs keep their normal arrow-key behavior.
+
 ## Project structure
 
 ```text
 src/
   astro.js          Observer frame, ephemerides and simulation clock
   renderer.js       Sky and landscape rendering
+  sky-navigation.js Keyboard controls and gentle desktop edge panning
   meteors.js        Shower activity and event timing
   forest-life.js    Animals and the telescope observer
   milky-way.js      Photographic sky background
